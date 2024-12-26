@@ -18,7 +18,7 @@ class CheckoutPage {
     this.continueButton = 'button:has-text("Continue to checkout")';
     this.confirmationText = '#order-confirmation h1';
     this.orderID = 'p[data-id="ordernumber"]';
-    
+
     // Cart Total and Product Prices
     this.cartTotal = '//*[text()="Total "]/span/b';
     this.productPriceSelector = '.price';
@@ -51,13 +51,13 @@ class CheckoutPage {
   async checkShippingAddressCheckbox() {
     const isChecked = await this.page.isChecked(this.shippingCheckbox);
     if (!isChecked) {
-        await this.page.check(this.shippingCheckbox);
+      await this.page.check(this.shippingCheckbox);
     }
   }
 
   async uncheckShippingAddressCheckbox() {
     const isChecked = await this.page.isChecked(this.shippingCheckbox);
-    if (isChecked){
+    if (isChecked) {
       await this.page.uncheck(this.shippingCheckbox);
     }
   }

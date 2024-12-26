@@ -10,13 +10,13 @@ class GridPage {
 
   // Get the title of an item based on its position
   async getItemTitle(position) {
-    const item = this.page.locator(`${this.gridItemSelector}:nth-child(${position}) h4[data-test-id="item-name"]`); 
+    const item = this.page.locator(`${this.gridItemSelector}:nth-child(${position}) h4[data-test-id="item-name"]`);
     return await item.textContent();
   }
 
   // Get the price of an item based on its position
   async getItemPrice(position) {
-    const item = this.page.locator(`${this.gridItemSelector}:nth-child(${position}) #item-price`); 
+    const item = this.page.locator(`${this.gridItemSelector}:nth-child(${position}) #item-price`);
     return await item.textContent();
   }
 

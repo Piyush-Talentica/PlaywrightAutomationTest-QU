@@ -1,16 +1,23 @@
-const { test, expect } = require('@playwright/test');
+const {
+  test,
+  expect
+} = require('@playwright/test');
 const SearchPage = require('../pages/searchPage');
 const testData = require('../resources/testDataSearchPage.json');
 
 test.describe('Search Tests', () => {
   let searchPage;
 
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({
+    page
+  }) => {
     searchPage = new SearchPage(page);
     await searchPage.navigate();
   });
 
-  test('Search Success', async ({ page }) => {
+  test('Search Success', async ({
+    page
+  }) => {
     const searchPage = new SearchPage(page);
     await searchPage.navigate();
 
@@ -23,11 +30,13 @@ test.describe('Search Tests', () => {
 
       // Assert that the search result message contains the expected word without quotes
       const searchResultMessage = await searchPage.getSearchResultMessage();
-      expect(searchResultMessage).toContain(testData.resultMessage+word);
+      expect(searchResultMessage).toContain(testData.resultMessage + word);
     }
   });
 
-  test('Search Empty', async ({ page }) => {
+  test('Search Empty', async ({
+    page
+  }) => {
 
     // Perform search with an empty query
     await searchPage.searchForWord('');
@@ -40,7 +49,9 @@ test.describe('Search Tests', () => {
     expect(errorMessage).toBe(testData.emptySearchErrorMessage);
   });
 
-  test.afterEach(async ({ page }) => {
+  test.afterEach(async ({
+    page
+  }) => {
     await page.close();
   });
 

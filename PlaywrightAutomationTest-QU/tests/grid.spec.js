@@ -1,11 +1,16 @@
-const { test, expect } = require('@playwright/test');
+const {
+  test,
+  expect
+} = require('@playwright/test');
 const GridPage = require('../pages/GridPage');
 const testData = require('../resources/testDataGridPage.json');
 
 test.describe('Grid Page Tests with Resource Data', () => {
   let gridPage;
 
-  test.beforeEach(async ({ page }) => {
+  test.beforeEach(async ({
+    page
+  }) => {
     gridPage = new GridPage(page);
     await gridPage.navigate();
   });
@@ -29,7 +34,9 @@ test.describe('Grid Page Tests with Resource Data', () => {
     }
   });
 
-  test.afterEach(async ({ page }) => {
+  test.afterEach(async ({
+    page
+  }) => {
     await page.close();
   });
 });

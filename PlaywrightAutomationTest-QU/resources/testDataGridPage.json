@@ -1,13 +1,48 @@
 {
-  "gridItems": [
-    { "position": 1, "title": "Classic Muzzarella", "price": "$8" },
-    { "position": 2, "title": "Crispy Bacon", "price": "$9" },
-    { "position": 3, "title": "Baked Rolls x 8", "price": "$10" },
-    { "position": 4, "title": "Garlic Mix", "price": "$9" },
-    { "position": 5, "title": "Margarita", "price": "$9" },
-    { "position": 6, "title": "Veggie", "price": "$8" },
-    { "position": 7, "title": "Super Pepperoni", "price": "$10" },
-    { "position": 8, "title": "Evergreen Cream", "price": "$9" },
-    { "position": 9, "title": "Muzzarella BBQ", "price": "$9" }
+  "gridItems": [{
+      "position": 1,
+      "title": "Classic Muzzarella",
+      "price": "$8"
+    },
+    {
+      "position": 2,
+      "title": "Crispy Bacon",
+      "price": "$9"
+    },
+    {
+      "position": 3,
+      "title": "Baked Rolls x 8",
+      "price": "$10"
+    },
+    {
+      "position": 4,
+      "title": "Garlic Mix",
+      "price": "$9"
+    },
+    {
+      "position": 5,
+      "title": "Margarita",
+      "price": "$9"
+    },
+    {
+      "position": 6,
+      "title": "Veggie",
+      "price": "$8"
+    },
+    {
+      "position": 7,
+      "title": "Super Pepperoni",
+      "price": "$10"
+    },
+    {
+      "position": 8,
+      "title": "Evergreen Cream",
+      "price": "$9"
+    },
+    {
+      "position": 9,
+      "title": "Muzzarella BBQ",
+      "price": "$9"
+    }
   ]
 }
