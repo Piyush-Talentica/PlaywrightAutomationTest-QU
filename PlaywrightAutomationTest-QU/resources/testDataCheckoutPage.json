@@ -1,0 +1,23 @@
+{
+    "checkoutFormData": {
+        "billingAddress": {
+          "fullName": "Piyush Singhal",
+          "email": "Piyush.Singhal@talentica.com",
+          "address": "In front of Aasmani Mata Mandir, Kailash",
+          "city": "Gwalior",
+          "state": "Madhya Pradesh",
+          "zip": "474012"
+        },
+        "payment": {
+          "nameOnCard": "Piyush Singhal",
+          "creditCardNumber": "1234567812345678",
+          "expMonth": "January",
+          "expYear": "2012",
+          "cvv": "091"
+        }
+      },
+    "shippingAddressMessage": "Shipping address same as billing checkbox must be selected.",
+    "orderConfirmationMessage": "Order Confirmed!",
+    "orderNumberConfirmationMessage": "Order Number:",
+    "emptyErrorOrderNumberMessage": ""
+}

@@ -1,0 +1,7 @@
+{
+    "loginData": [
+        { "username": "johndoe19", "password": "supersecret", "expectedMessage": "Welcome!", "role": "validUserRole" },
+        { "username": "wronguser", "password": "wrongpass", "expectedMessage": "Wrong credentials", "role": "invalidUserRole" },
+        { "username": "", "password": "", "expectedMessage": "Fields can not be empty", "role": "EmptyUserRole" }
+      ]
+}

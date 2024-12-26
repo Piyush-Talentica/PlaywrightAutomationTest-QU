@@ -1,0 +1,5 @@
+{
+    "searchWords": ["automation", "testing", "playwright", "quality", "development"],
+    "resultMessage": "Found one result for ",
+    "emptySearchErrorMessage": "Please provide a search word."
+}
